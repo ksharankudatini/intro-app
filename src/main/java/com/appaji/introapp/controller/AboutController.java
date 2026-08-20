@@ -30,7 +30,7 @@ public class AboutController {
     }
 
     @DeleteMapping("/about")
-    public ResponseEntity<AboutDto> deleteAbout(@RequestParam String email) {
+    public ResponseEntity<Void> deleteAbout(@RequestParam String email) {
         service.deleteAbout(email);
         return ResponseEntity.noContent().build();
     }

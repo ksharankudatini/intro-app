@@ -7,6 +7,5 @@ public record AboutDto(
         String email,
         String linkedInUrl,
         String gitHubUrl,
-        String youtubeChannel
-) {
+        String youtubeChannel) {
 }
