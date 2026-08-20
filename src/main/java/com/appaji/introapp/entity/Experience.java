@@ -8,6 +8,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -19,4 +21,6 @@ public class Experience {
     private String companyName;
     private String client;
     private String Tech;
+    private LocalDate joiningDate;
+    private LocalDate lastWorkingDate;
 }
