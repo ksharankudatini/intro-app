@@ -15,14 +15,20 @@ public class About {
     private Long id;
 
     private String name;
+
     private String bio;
+
     private String profileImageUrl;
+
     @Column(unique = true)
     private String email;
+
     @Column(unique = true)
     private String linkedInUrl;
+
     @Column(unique = true)
     private String gitHubUrl;
+
     @Column(unique = true)
     private String youtubeChannel;
 }

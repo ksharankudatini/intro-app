@@ -14,7 +14,7 @@ public class AboutService {
     private final AboutMapper mapper;
 
     public AboutDto getAbout() {
-        return mapper.toAboutDto(repo.findAll().getFirst());
+        return mapper.toAboutDto(repo.findAll().stream().findFirst().orElseThrow(() -> new RuntimeException("No About data found")));
     }
 
     public AboutDto createAbout(AboutDto dto) {

@@ -31,6 +31,6 @@ public class YouTubeService {
     }
 
     public void deleteYoutube(String title) {
-        repo.findByTitle(title).orElseThrow(() -> new RuntimeException("youTube Video name not found"));
+        repo.delete(repo.findByTitle(title).orElseThrow(() -> new RuntimeException("youTube Video name not found")));
     }
 }

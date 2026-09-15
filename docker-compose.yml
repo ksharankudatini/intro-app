@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:18
+    container_name: intro-app-postgres
+    environment:
+      POSTGRES_USER: appaji
+      POSTGRES_PASSWORD: appaji
+      POSTGRES_DB: introapp
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql
+
+volumes:
+  postgres-data:
