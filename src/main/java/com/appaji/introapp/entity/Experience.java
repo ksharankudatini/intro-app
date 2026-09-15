@@ -20,7 +20,7 @@ public class Experience {
     private Integer id;
     private String companyName;
     private String client;
-    private String Tech;
+    private String tech;
     private LocalDate joiningDate;
     private LocalDate lastWorkingDate;
 }

@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public record ExperienceDto(
         String companyName,
         String client,
-        String Tech,
+        String tech,
         LocalDate joiningDate,
         LocalDate lastWorkingDate) {
 }
